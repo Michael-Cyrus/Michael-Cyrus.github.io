@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/31/标题/index.html">
 <meta property="og:site_name" content="梦想还是要有的，万一实现了呢！">
 <meta property="og:description" content="由于本人使用的是windows系统，所以本篇博客只针对windows系统来搭建个人博客；Mac系统搭建个人博客请参考HEXO搭建个人博客 配置环境安装git下载 git 并执行即可完成安装。 安装Node.js在 Windows 环境下安装 Node.js 非常简单，仅须下载安装文件并执行即可完成安装。 安装hexo利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）  n">
-<meta property="og:updated_time" content="2017-05-31T09:21:20.216Z">
+<meta property="og:updated_time" content="2017-05-31T09:35:01.121Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建个人博客">
 <meta name="twitter:description" content="由于本人使用的是windows系统，所以本篇博客只针对windows系统来搭建个人博客；Mac系统搭建个人博客请参考HEXO搭建个人博客 配置环境安装git下载 git 并执行即可完成安装。 安装Node.js在 Windows 环境下安装 Node.js 非常简单，仅须下载安装文件并执行即可完成安装。 安装hexo利用 npm 命令即可安装。（在任意位置点击鼠标右键，选择Git bash）  n">
@@ -203,14 +203,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="更改主题Themes"><a href="#更改主题Themes" class="headerlink" title="更改主题Themes"></a>更改主题Themes</h3><p>直接在根目录\themes下面添加主题样式，主题样式可以在 <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">主题样式</a> 中下载<br>然后在_config.yml文件中指定主题样式 theme: landscape<br>我的博客里面使用的是 theme: yilia</p>
 <h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><p>新建文章，执行下面命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;文章标题&quot;</div></pre></td></tr></table></figure></p>
 <p>即会在根目录\source_posts 下面生成文件 文章标题.md，编辑该文件保存即可 刷新 <a href="localhost:4000" target="_blank" rel="external"> localhost:4000</a>可预览效果</p>
 <h3 id="部署到服务器"><a href="#部署到服务器" class="headerlink" title="部署到服务器"></a>部署到服务器</h3><p>执行以下命令</p>
 <ul>
 <li>hexo clean（最好每次部署之前clean一下）</li>
 <li>hexo generate</li>
-<li>hexo deploy</li>
+<li>hexo deploy<br>出现以下提示说明部署成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Deploy done: git</div></pre></td></tr></table></figure>
+</li>
 </ul>
+<p>对于文章和页面的删除，只需要去根目录\source中找到指定的文件，删除即可。</p>
 
       
 
